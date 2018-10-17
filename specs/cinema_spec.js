@@ -50,9 +50,13 @@ describe('Cinema', function () {
     assert.deepStrictEqual(actual, [moonlight]);
   });
 
-  xit('should be able to check whether there are no films from a particular year');
-  xit('should be able to check whether all films are over a particular length');
-  xit('should be able to calculate total running time of all films');
+  it('should be able to check whether there are no films from a particular year', function(){
+    const actual = cinema.noFilmThatYear(1900);
+    assert.deepStrictEqual(actual, "no films")
+
+  });
+  it('should be able to check whether all films are over a particular length');
+  it('should be able to calculate total running time of all films');
 
 });
 

@@ -15,5 +15,10 @@ Cinema.prototype.findFilmByYear = function(i) {
   return this.films.filter(n => (n.year === i))
 }
 
+Cinema.prototype.noFilmThatYear = function(year) {
+  if (this.films.filter(n => (n.year === year) === 0)){
+  return "no films";
+  }
+};
 
 module.exports = Cinema;
