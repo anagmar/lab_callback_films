@@ -8,5 +8,8 @@ Cinema.prototype.filmTitles = function() {
 Cinema.prototype.findFilmByTitle = function(i) {
   return this.films.find(n => n.title === i);
 }
+Cinema.prototype.filterByGenre = function(i) {
+  return this.films.filter(n => (n===i))
+};
 
 module.exports = Cinema;
